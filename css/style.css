@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+/*
+? Estilos:
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    color: #ffffff;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container Header */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    position: relative;
+}
+
+#navMenu, #navBtn {
+    display: none;
+    background-color: #0c1333;
+}
+
+li {
+    margin: 10px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header div {
+    display: flex;
+    justify-content: end;
+    margin: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#btnMenu {
+    width: 30px;
+    cursor: pointer;
+}
+
+body {
+    background-color: #0c1333;
+}
+
+/* Container Inicio */
+
+#containerHome {
+    margin: 80px 0px 90px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.contentHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgLogo {
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.contentSocial {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+}
+
+.imgSocial {
+    height: 20px;
+    margin-top: 20px;
+}
+
+/* Container About */
+
+#containerAbout, #containerLanguage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgPerfil {
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px #1f41bb79;
+    margin-bottom: 30px;
+}
+
+.contentAbout {
+    margin: 10px 50px 0px 50px;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+}
+
+/* Container Lenguajes */
+
+h3 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.contentLanguage img {
+    width: 70px;
+    margin-top: 80px;
+}
+
+/* Container Proyect */
+
+#containerProyect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contentProyect {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    background-image: url('../img/fondoCard.png');
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.contentProyect:hover {
+    box-shadow: 0px 0px 4px 4px #1f41bba9;
+}
+
+.contentProyect div {
+    font-size: 12px;
+    margin: 10px;
+}
+
+.contentProyect img {
+    height: 350px;
+    width: 200px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+@media(min-width: 768px) {
+    /* Container Header */
+
+    #navMenu {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #0c1333;
+    }
+
+    li {
+        margin: 20px;
+    }
+    
+    #btnMenu {
+        display: none;
+    }
+
+    /* Container Inicio */
+
+    #containerHome {
+        padding-top: 60px;
+    }
+
+    .contentHome {
+        flex-direction: row;
+    }
+
+    #imgLogo {
+        width: 200px;
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 40px;
+        width: 450px;
+        text-align: right;
+    }
+
+    .contentSocial {
+        justify-content: flex-end;
+        width: 640px;
+    }
+
+    .imgSocial {
+        height: 25px;
+        margin: 0px 0px 0px 20px;
+    }
+
+    /* Container About */
+
+    #containerAbout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #containerAbout article {
+        width: 500px;
+    }
+
+    h2, h3 {
+        text-transform: uppercase;
+    }
+
+    #perfil {
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    /* Container Lenguajes */
+
+    #containerLanguage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .contentLanguage img {
+        margin: 30px;
+    }
+
+    /* Container Proyect */
+
+    #containerProyect {
+        padding-top: 80px;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+
+    #containerProyect h3 {
+        position: absolute;
+        top: 0;
+    }
+
+    
+}
